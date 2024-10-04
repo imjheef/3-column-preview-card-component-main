@@ -16,28 +16,33 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-self: center;
 	height: 100vh;
 }
 
 .card-container {
 	display: flex;
-	height: 470px;
+	margin: auto;
+	max-width: 1040px;
+}
+
+.card {
+	display: flex;
 	border-radius: 12px;
 	overflow: hidden;
+	height: 500px;
 }
 
 div h1 {
 	font-size: 2.3rem;
 	text-transform: uppercase;
 	font-family: 'Big Shoulders Display', sans-serif;
+	font-weight: 700;
 	margin: 28px 0;
 }
 
@@ -45,8 +50,8 @@ div h1 {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 0 54px;
-	width: 320px;
+	padding: 0 64px;
+	font-weight: 400;
 	font-family: 'Lexend Deca';
 	color: var(--very-light-gray);
 }
@@ -54,7 +59,7 @@ div h1 {
 .division p {
 	color: var(--transparent-white);
 	font-size: 15px;
-	margin-bottom: 65px;
+	margin-bottom: 85px;
 	line-height: 1.5;
 }
 
@@ -89,9 +94,39 @@ div h1 {
 }
 
 .attribution {
+	/* margin-top: 24px; */
 	font-size: 11px;
+	font-weight: 400;
 	text-align: center;
+	font-family: 'Lexend Deca', system-ui;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--very-dark-cyan);
+}
+
+.attribution a:hover {
+	color: var(--bright-orange);
+}
+
+@media (width <= 985px) {
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		max-width: 350px;
+		margin: 34px 12px;
+		height: 100%;
+	}
+
+	.division button {
+		margin-bottom: 38px;
+	}
+
+	section div img {
+		margin-top: 44px;
+	}
 }
