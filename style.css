@@ -58,7 +58,7 @@ div h1 {
 
 .division p {
 	color: var(--transparent-white);
-	font-size: 15px;
+	font-size: 14px;
 	margin-bottom: 85px;
 	line-height: 1.5;
 }
@@ -120,6 +120,10 @@ div h1 {
 		max-width: 350px;
 		margin: 34px 12px;
 		height: 100%;
+	}
+	.division p {
+		font-size: 14px;
+		margin-bottom: 44px;
 	}
 
 	.division button {
